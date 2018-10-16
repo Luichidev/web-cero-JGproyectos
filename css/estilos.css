@@ -83,7 +83,14 @@ h1, h2, h3, h4, h5, h6 {
 #btn-menu {
     display: block;
     color: #FFF;
-
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
 }
 
 .social-icon {
@@ -99,6 +106,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3em;
     width: 35px;
     height: 35px;
+    /*Aquí aumente esta linea para centrar los iconos*/
+    line-height: 35px;           
+
     background-color: #FFF;
     border-radius: 50%;
 }
@@ -117,6 +127,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     list-style: none;
     text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
 }
 
 .menu__link {
@@ -126,3 +139,49 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.menu__link:hover{
+    background-color: var(--mainColor);
+}
+
+.menu__link--select {
+    background-color: var(--mainColor);
+}
+
+.mostrar {
+    height: 196px;
+}
+/* -------------Estilos Banner------------- */
+
+.banner {
+    margin-top: -55px;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner__content {
+    width: 90%;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
