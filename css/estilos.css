@@ -1,10 +1,128 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico');
 
+:root {
+    --mainColor :  #DE423A;
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* body {
+body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;    
+}
+
+/* -------------Estilos base------------- */
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+/* -------------Estilos header------------- */
+
+.main-header {
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: var(--mainColor);
+    padding: 10px;
     font-family: 'Pacifico', cursive;
-} */
+    font-weight: 100;
+}
+
+.main-header__contactInfo__phone {
+    background-color: var(--mainColor);
+    color: #FFF;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-header__contactInfo__address {
+    padding: 10px;
+    margin: 0;
+}
+.main-header span {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/* -------------Estilos menu------------- */
+
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+
+#btn-menu {
+    display: block;
+    color: #FFF;
+
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon  [class*="fa-"]{
+    color: #000;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.social-icon__link {
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.85);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: #FFF;
+    text-decoration: none;
+}
+
