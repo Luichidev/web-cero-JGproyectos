@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galeria | Concierto Eventos</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes initial-scale=1, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <img src="" alt="" class="modal__img" id="modal__img">
+        </div>
+        <div class="modal__boton" id="modal__boton">X</div>
+    </div>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Concierto Eventos </h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span><i class="fas fa-phone-volume"></i> 663 411 621</span>
+                </p>
+                <p class="main-header__contactInfo__address"><span><i class="fas fa-map-marker-alt"></i></span> Barrio
+                    24 de septiembre C/J - Santa Cruz, Bolivia</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span id="btn-menu"><i class="fas fa-bars"></i></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/" class="menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link menu__link--select">Galería</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span><i class="fab fa-facebook-f"></i></span></a>
+                <a href="" class="social-icon__link"><span><i class="fab fa-twitter"></i></span></a>
+                <a href="" class="social-icon__link"><span><i class="fas fa-envelope"></i></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <img src="img/portada-gallery.jpeg" alt="" class="banner__img">
+        <div class="banner__content">Lo mejor de nosotros a tu servicio</div>
+    </section>
+
+    <main class="main">
+        <div class="group gallery">
+            <h2 class="group__title">Nuestra Galería</h2>
+            <div class="container container--flex">
+                <div class="column column--50-25">
+                    <img src="img/particulares/part10000.jpg" alt="" class="gallery__img gallery__img--big">
+                    <img src="img/particulares/part9963.jpg" alt="" class="gallery__img gallery__img--small">
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/particulares/part9964.jpg" alt="" class="gallery__img gallery__img--small">
+                    <img src="img/particulares/part9965.jpg" alt="" class="gallery__img gallery__img--big">
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/particulares/part9966.jpg" alt="" class="gallery__img gallery__img--big">
+                    <img src="img/particulares/part9967.jpg" alt="" class="gallery__img gallery__img--small">
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/particulares/part9968.jpg" alt="" class="gallery__img gallery__img--small">
+                    <img src="img/particulares/part9969.jpg" alt="" class="gallery__img gallery__img--big">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ex quia ipsa
+                    possimus repudiandae, ea minima adipisci provident laudantium dicta.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Barrio 24 de septiembre C/J - Santa Cruz, Bolivia</p>
+                <p class="column__txt">Teléfono : 663 411 621</p>
+                <p class="column__txt">conciertoeventos@conciertoeventos.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos en nuestras redes</h2>
+                <p class="column__txt"><a href=""><i class="fab fa-facebook-f"></i> Facebook</a></p>
+                <p class="column__txt"><a href=""><i class="fab fa-twitter"></i> Siguenos en Twitter</a></p>
+                <p class="column__txt"><a href=""><i class="fab fa-youtube"></i> Visita nuestro canal</a></p>
+            </div>
+            <p class="copy">&copy; 2018 Concierto Eventos | Todos los derechos reservador</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+
+</body>
+
+</html>
